@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Registration Form</title>
+    <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 5px;
+                text-align: left;
+            }
+            
+            </style>
+</head>
+<body style="background:url(img9.jpg)">
+    <h2 align="center" style="color:navy;"> Student Registration Form</h2>
+    <form>
+        <fieldset>
+         <fieldset>
+            <legend>Personal Information :</legend><br>
+            First Name :
+            <input type="text" name="Firstname" required>
+            Middle Name :
+            <input type ="text" name="Middletname"required>
+            Last Name :
+            <input type ="text" name="Lastname"><br><br>
+            Birth Date :
+            <input type="date" name="bday"required>
+            Gender :
+            <input type="radio" name="Gender" value="male">Male
+            <input type="radio" name="Gender" value="female">Female
+            <input type="radio" name="Gender" value="other">Other
+            <input type="file" name="photo" required>
+         </fieldset><br>
+         <fieldset>
+             <legend>Contact Details</legend><br>
+             Mobile Number :
+             <input type="text" name="mobile" maxlength="12" required >
+             Email :
+             <input type="email" name="email" >
+             Address :
+             <input type="text" name="address" size="60">
+         </fieldset><br>
+         <fieldset>
+                <legend>Academic Details</legend><br>
+                School/College : 
+                <input type="text" name="School" size="60">
+                Class :
+                <select name="class">
+                    <option value="5 th">5 th</option>
+                    <option value="6 th">6 th</option>
+                    <option value="7 th">7 th</option>
+                    <option value="8 th">8 th</option>
+                    <option value="9 th">9 th</option>
+                    <option value="10 th">10 th</option>
+                    <option value="11 th">11 th</option>
+                    <option value="12 th">12 th</option>
+                </select>
+                Subject :
+                <select name="subject">
+                        <option value="Science">Science</option>
+                        <option value="Math">Math</option>
+                        <option value="English">English</option>
+                        <option value="Physics">Physics</option>
+                        <option value="chemistry">Chemistry</option>
+                </select>
+                <input type="button" name ="add"value="Add course"><br><br>
+                <table style ="width: 30%">
+                    <tr>
+                    <th>Sr.No.</th>
+                    <th>class</th>
+                    <th>subject</th>
+                </tr>
+            </table>
+            </fieldset><br>
+            <fieldset>
+                    <legend>Login Details</legend><br>
+                    Username :
+                    <input type="text" name="Username" required >
+                    Passsword :
+                    <input type="password" name ="psw" required>
+                    Confirm Passsword :
+                    <input type="password" name ="c_psw" required>
+                </fieldset><br>
+         <input type="checkbox" name="accept" required>I accept all the <a href="#">terms and conditions</a> of the institue.<br><br>
+            <input type ="submit" value="Register">
+            <input type ="reset" value="Reset">
+            <input type ="submit" value="Cancel">
+        </fieldset>
+    </form>
+</body>
+</html>
